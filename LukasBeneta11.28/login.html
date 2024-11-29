@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css"> <!-- Link your CSS -->
+</head>
+<body>
+
+<!-- Login Form Container -->
+<div class="login-form-container">
+    <h2>Login</h2>
+
+    <!-- Login Form -->
+    <form onsubmit="event.preventDefault(); login();">
+        <!-- Email -->
+        <label for="login-email">Email:</label>
+        <input type="email" id="login-email" placeholder="Enter your email" required>
+
+        <!-- Password  -->
+        <label for="login-password">Password:</label>
+        <input type="password" id="login-password" placeholder="Enter your password" required>
+
+        <!-- Error Message -->
+        <div id="error-message" class="error-message hidden"></div>
+
+        <!-- Button -->
+        <button type="submit">Login</button>
+    </form>
+
+    <!-- Register -->
+    <p>Don't have an account? <a href="register.html">Register here</a></p>
+</div>
+
+<script src="login.js"></script> <!-- Link your JavaScript file for login -->
+</body>
+</html>

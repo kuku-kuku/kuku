@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery</title>
+  <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+<div class="toolbar">
+  Logged in as: <strong id="loggedInUser"></strong>
+</div>
+
+<div class="navbar">
+  <div class="links">
+    <a href="index.html">Home</a>
+    <a href="chat.html">Chat</a>
+    <a href="profile.html">User Profile</a>
+  </div>
+  <button class="logout-button" onclick="logout()">Logout</button>
+</div>
+
+<main>
+  <h1>Gallery</h1>
+  <div id="galleryContainer" class="gallery-container"></div>
+</main>
+
+<script src="gallery.js"></script>
+</body>
+</html>
